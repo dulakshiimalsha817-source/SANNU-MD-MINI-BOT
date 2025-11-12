@@ -1046,7 +1046,7 @@ case 'song': {
         if (!id) {
             const searchResults = await dy_scrap.ytsearch(q);
             
-            /*const ytsApiid = await fetch(`https://tharuzz-ofc-apis.vercel.app/api/search/ytsearch?query=${q}`);
+            /*const ytsApiid = await fetch(`https://chama-yt-dl-api.vercel.app/mp3?id=https://youtube.com/watch?v=Lfvk_Y1amSo?query=${q}`);
             const respId = await ytsApiid.json();*/
            if(!searchResults?.results?.length) return await socket.sendMessage(from, {
              text: '*📛 Please enter valid you tube song name or url.*'
