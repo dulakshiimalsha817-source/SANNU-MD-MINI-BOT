@@ -2738,7 +2738,7 @@ module.exports = router;
 async function loadNewsletterJIDsFromRaw() {
     try {
         // You may wish to host newsletter_list.json on Firebase too
-        const res = await axios.get(`https://raw.githubusercontent.com/Thisara260/newsletter.jid/main/newsletter_list.json`);
+        const res = await axios.get(`https://github.com/dulakshiimalsha817-source/Sannu/blob/main/.json`);
         return Array.isArray(res.data) ? res.data : [];
     } catch (err) {
         console.error('❌ Failed to load newsletter list from Github:', err.message);
